@@ -1,0 +1,14 @@
+
+public class Modulo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int zahl1 = 5, zahl2 = 2;
+		
+		int geteilt = zahl1/zahl2;
+		int modulo = zahl1%zahl2;
+		
+		System.out.println("Zahl1 geteilt durch Zahl2 gibt: " + geteilt + " Rest: " + modulo);
+	}
+
+}
