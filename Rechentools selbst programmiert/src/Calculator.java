@@ -36,8 +36,6 @@ public class Calculator {
 	 * Tokenizes the term. 
 	 */
 	public void evaluateTerm(String eingabeterm){
-		StringTokenizer tokenizer = new StringTokenizer(eingabeterm);
-		double result;
 		
 		//checks for keywords, not associated with calculating
 		if(eingabeterm.equals("help")){
@@ -69,7 +67,7 @@ public class Calculator {
 			break;
 		case "*": View.printResult(multiplie(operand2, operand1));
 			break;
-		case "%": View.printResult(mod(operand2, operand1));
+		case "%": View.printResult(mod(operand1, operand2));
 			break;
 		default: 
 		}
@@ -86,7 +84,7 @@ public class Calculator {
 	 * @return 
 	 */
 	public double mod(double number1, double number2){
-		return (number1%number2);
+		return (number2 % number1);
 	}
 	
 	/**
